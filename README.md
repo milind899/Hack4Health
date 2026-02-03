@@ -25,17 +25,27 @@ Our system uses a **Soft-Voting Ensemble** architecture (see the diagram in the 
 
 ---
 
+## � Project Structure
+```text
+.
+├── assets/                # Presentation visuals and diagrams
+├── scripts/               # Step-by-step implementation pipeline
+│   ├── 1_data_loading.py
+│   ├── 2_preprocessing.py
+│   ├── 3_baseline_model.py
+│   ├── 4_semantic_model.py
+│   ├── 6_ensemble_model.py
+│   └── ... (and more)
+├── config.py              # Central configuration
+├── predict.py             # CLI Tool for live inference
+└── README.md              # Project documentation
+```
+
 ## 📊 Results at a Glance
+The final **Ensemble Model** achieved a **Weighted F1-Score of 0.84**, a significant leap from the 0.39 baseline.
 
-| Metric | Baseline | **Our Optimized System** |
-| :--- | :--- | :--- |
-| **Weighted F1-Score** | 0.39 | **0.84** |
-| **Handling 40+ Emotions**| Struggles | **Robust** |
-| **Language Support** | Keyword-based | **Semantic-based** |
-
-> [!TIP]
-> **Check out our Visuals!**
-> We have included high-fidelity confusion matrices and architecture diagrams in the root folder to show exactly how the model performs.
+- **Final Analysis**: See [v2_final_results.png](assets/v2_final_results.png) for the confusion matrix.
+- **Data Insights**: See [v1_data_stats.png](assets/v1_data_stats.png) for emotion distribution.
 
 ---
 
