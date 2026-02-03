@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+models/
+outputs/results_xlm_roberta/
+outputs/xlmr_model/
+*.pkl
+*.npy
+*.bin
+*.safetensors
+*.model
